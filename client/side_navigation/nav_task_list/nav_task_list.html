@@ -1,0 +1,9 @@
+<template name="nav_task_list">
+	<ul class="nav nav-list nav-pills nav-tabs nav-stacked">
+		{{#each tasks }}
+			<li>
+				<a href="#{{ _id }}" class="{{ color status }}">{{ name }}</a>
+			</li>
+		{{/each }}
+	</ul>
+</template>

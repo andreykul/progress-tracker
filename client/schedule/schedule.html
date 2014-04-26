@@ -1,0 +1,22 @@
+<template name="schedule">
+		<form class="form-inline">
+			<input type="text" id="schedule-name" placeholder="Name">	
+			<input type="text" id="schedule-date" placeholder="Date">	
+			<button type="button" id="add-schedule" class="btn btn-primary">Add new Schedule</button>	
+		</form>
+		
+		{{#each schedule }}
+			<div id="{{ _id }}" style="border: 1px solid lightgray; padding:10px; border-radius: 10px;">
+				<button class="close remove-schedule">&times;</button>
+				<i class="btn-link icon-arrow-up order-up"></i>
+				<i class="btn-link icon-arrow-down order-down"></i>
+				<h2 contenteditable="true" class="schedule-title">
+					<span class="schedule-name">{{ name }}</span> <small class="schedule-date">{{ date }}</small>
+				</h2>
+				{{> tasks }}
+				<button class=" btn btn-success add-task">Add Task</button>
+			</div>
+			<img class="offset3" src="separator.png" alt="Separator">
+		{{/each}}
+
+</template>

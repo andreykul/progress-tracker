@@ -1,0 +1,8 @@
+<template name="side_navigation">
+
+		{{#each schedule}}
+			<h4>{{ name }} <small>{{ date }}</small> </h4>
+			{{> nav_task_list}}
+		{{/each }}
+
+</template>
