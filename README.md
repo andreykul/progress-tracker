@@ -1,10 +1,8 @@
 #Progress Tracker
----
 Meteor.js application to set goal and keep track of them.
 The application is for personal usage only since it is not secure in anyway.
 
 ##Packages
----
 The application uses the following packages:
 
 * bootstrap
@@ -15,7 +13,6 @@ The application uses the following packages:
 * autopublish
 
 ##Structure
----
 Every template has its own folder.
 
 Each folder has two files _.html_ and _.js_
@@ -26,7 +23,6 @@ _.js_ : contains `Meteor.helpers` and `Meteor.events`
 
 
 ##Collections
----
 
 The application is built from two simple collections
 
